@@ -1,5 +1,6 @@
 using System.Collections;
+using UnityEngine;
 
-public class GameColor () {
+public class GameColor : MonoBehaviour () {
     public Color;
 }
