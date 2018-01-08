@@ -20,10 +20,10 @@ public class Player : MonoBehaviour () {
 	rb2d.AddForce (movement * speed);
     }
 	
-    void ChangeColor (string color) {
+    void ChangeColor (Color color) {
         GameObject[] go = (GameObject) GameObject.FindObjectsOfType(GameObject);
 	foreach(GameObject gameObject in go) {
-	     if (gameObject.GetComponentOfType<GameColor>() == color) {
+	     if (gameObject.GetComponentOfType<GameColor>().color == color) {
 	     	gameObject.enabled = false;
 	     } else {
 	        gameObject.enable = true;
